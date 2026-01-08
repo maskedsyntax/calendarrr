@@ -1,6 +1,6 @@
 # Maintainer: MaskedSyntax <aftaab2507@gmail.com>
 pkgname=calendarrr
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="A minimal calendar application built using GTK for XFCE"
 arch=('x86_64')
