@@ -27,7 +27,10 @@ A minimal calendar application for XFCE desktops that allows users to manage dai
 
 ### Key Features
 - **Daily Notes:** Save and load notes for any specific date.
+- **Global Search:** Find notes by content and jump directly to the date.
 - **Visual Indicators:** Days with saved notes are visually marked on the calendar.
+- **Export/Import:** Backup your notes as text files or import them from existing data.
+- **Note Management:** Easily delete notes with a safety confirmation dialog.
 - **Quick Navigation:** Jump back to today's date with a single click.
 - **Lightweight:** Built with GTK3 and C++ for minimal resource usage.
 
