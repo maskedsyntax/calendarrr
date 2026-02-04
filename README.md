@@ -23,7 +23,13 @@
 
 ## Overview
 
-A minimal calendar application for xfce desktops that allows users to select and view dates easily.
+A minimal calendar application for XFCE desktops that allows users to manage daily notes and events.
+
+### Key Features
+- **Daily Notes:** Save and load notes for any specific date.
+- **Visual Indicators:** Days with saved notes are visually marked on the calendar.
+- **Quick Navigation:** Jump back to today's date with a single click.
+- **Lightweight:** Built with GTK3 and C++ for minimal resource usage.
 
 ## Setup
 
