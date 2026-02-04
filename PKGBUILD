@@ -7,12 +7,19 @@ arch=('x86_64')
 url="https://github.com/maskedsyntax/calendarrr"
 license=('GPL3')
 depends=('gtk3')
+makedepends=('gcc' 'pkg-config')
 source=("$pkgname-$pkgver.tar.gz")  # Or use a GitHub URL
 sha256sums=('SKIP')
 
+build() {
+    cd "$pkgname-$pkgver"
+    g++ src/main.cpp -o calendarrr $(pkg-config --cflags --libs gtk+-3.0)
+}
+
 package() {
+    cd "$pkgname-$pkgver"
     # Install binary
-    install -Dm755 "$srcdir/$pkgname-$pkgver/bin/calendarrr" "$pkgdir/usr/bin/calendarrr"
+    install -Dm755 "calendarrr" "$pkgdir/usr/bin/calendarrr"
     
     # Install icons
     install -Dm644 "$srcdir/$pkgname-$pkgver/docs/assets/calendarrr-outlined.svg" \
